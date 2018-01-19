@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import ro.certejan.springdatatransactions.dao.BarDao;
+import ro.certejan.springdatatransactions.dao.BarDaoImpl;
 import ro.certejan.springdatatransactions.model.Bar;
 
 @RunWith(SpringRunner.class)
@@ -29,7 +30,7 @@ public class SpringDataTransactionsApplicationTests {
 		
 		@Bean
 		public BarDao barDao() {
-			return new BarDao();
+			return new BarDaoImpl();
 		}
 	}
 	
